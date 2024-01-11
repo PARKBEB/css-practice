@@ -4,37 +4,46 @@
     padding: 0;
 }
 
+/* info */
+.info {
+    background-color: #006241;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 20px 10px 40px;
+}
+
+/* nav */
 .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 15px 40px;
 }
 
-.top__nav {
-    background-color: rgb(6, 102, 6);
-    color: white;
-    font-weight: 300px;
-    font-size: 16px;
-    padding: 10px 20px 10px 40px;
-}
-
-.main__left__logo {
-    background-color: green;
-    width: 40px;
-    height: 40px;
+/* nav-left */
+.main__left__logo img{
+    width: 50px;
+    height: 50px;
     border-radius: 100%;
-    text-align: center;
+    margin-right: 30px;
 }
 
 .nav__left {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .nav__left ul {
+    width: 250px;
     display: flex;
     flex-direction: row;
     list-style:none;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 .nav__left ul li a{
@@ -42,35 +51,49 @@
     color: black;
 }
 
-.left__list {
-    display: flex;
-    flex-direction: row;
-}
-
+/* nav-right */
 .nav__right ul {
+    width: 200px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     list-style:none;
 }
 
-
 .nav__right ul li img {
-    width: 40px;
-    height: 40px;
-    display: block;
+    width: 30px;
+    height: 30px;
 }
 
+.person {
+    position: relative;
+}
+
+.person2 {
+    transform: translateY(-34px);
+    position: absolute;
+    visibility: hidden;
+}
+
+.person:hover {
+    visibility: hidden;
+}
+
+.person:hover .person2 {
+    visibility: visible;
+}
+
+/* 메인 사진  */
 .container {
     display: flex;
     flex-direction: row;
 }
 
 .contents__left__top img {
-    /* width: 613px;
-    height: 613px; */
     width: 950px;
     height: 950px;
-    padding-right: 8px;
+    padding-right: 10px;
 }
 
 .contents__right {
@@ -80,27 +103,49 @@
 }
 
 .contents__right img {
-    /* width: 613px;
-    height: 302px; */
     width: 950px;
-    height: 460px; 
+    height: 470px; 
 }
 
-.container__middle {
-    width: 100%;
-}
-
+/* WHAT'S BREWING */
 .bre {
     text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 50px 0;
 }
 
 .itemWrap {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     width: 100%;
 }
 
+.item {
+    width: 224px;
+    height: 360px;
+}
+
+.text .write {
+    width: 100%;
+    height: 110px;
+    font-size: 14px;
+    overflow-wrap: break-word;
+    padding: 0 10px 5px 10px;
+}
+
+.date {
+    width: 100%;
+    height: 20px;
+    text-align: right;
+    font-size: 12px;
+    padding-right: 10px;
+}
+
 .item img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     width: 224px;
     height: 224px;
 }
@@ -109,16 +154,13 @@
     position: relative;
 }
 
-.pre__arrow {
+.pre__arrow img{
     width: 40px;
     height: 40px;
     position: absolute;
     top: 100px;
     left: 180px;
-    font-size: 30px;
-    font-weight: 700;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 100%;
     text-align: center;
-    /* commit-test4*/
 }
