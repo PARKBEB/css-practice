@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body, html {
+    height: 1980px;
+}
+
 /* info */
 .info {
     background-color: #006241;
@@ -84,7 +88,7 @@
     visibility: visible;
 }
 
-/* 메인 사진  */
+/* 메인 사진 */
 .container {
     display: flex;
     flex-direction: row;
@@ -113,6 +117,7 @@
     font-size: 20px;
     font-weight: 900;
     padding: 50px 0;
+    letter-spacing: 3px;
 }
 
 .itemWrap {
@@ -125,6 +130,13 @@
 .item {
     width: 224px;
     height: 360px;
+}
+
+.item img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 224px;
+    height: 224px;
 }
 
 .text .write {
@@ -141,13 +153,7 @@
     text-align: right;
     font-size: 12px;
     padding-right: 10px;
-}
-
-.item img {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    width: 224px;
-    height: 224px;
+    color: gray
 }
 
 .img8 {
@@ -164,3 +170,82 @@
     border-radius: 100%;
     text-align: center;
 }
+
+/* circle */
+.circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    padding: 60px 30px;
+}
+
+.circle img {
+    width: 120px;
+    height: 120px;;
+}
+
+.circle span {
+    width: 150px;
+    overflow-wrap: break-word;
+}
+
+/* line */
+.line {
+    border-top: 10px solid #0000001A;
+}
+
+/* online store */
+.online__title {
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0 50px 0;
+}
+
+.online {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.price__text {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.online__subtitle ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    list-style: none;
+}
+
+.online__subtitle ul li a {
+    text-decoration: none;
+    color: darkgrey;
+    margin-right: 25px;
+}
+
+.li1 a {
+    transition: border-bottom 0.4s ease-in-out;
+}
+
+.li1 a:hover {
+    border-bottom: 3px solid green;
+    color: black;
+}
+
+/* online items*/
+.online__item img {
+    width: 152px;
+    height: 152px;
+}
+
